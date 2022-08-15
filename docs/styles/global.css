@@ -129,6 +129,10 @@ button {
   color: var(--color-black-200) !important;
 }
 
+.color-orange{
+  color: var(--color-primary-400) !important;
+}
+
 .font-xl {
   font-size: var(--font-size-xl);
 }

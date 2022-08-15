@@ -341,4 +341,8 @@
     top: -70px;
     transform: rotate(135deg);
   }
+
+  .key-title{
+    text-align: center;
+  }
 }
