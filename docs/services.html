@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./vendor/notiflix/notiflix-2.7.0.min.css" />
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/home2.css" />
 
   <link rel="stylesheet" href="./styles/services.css" />
   <title>Turnkey - Services</title>
@@ -51,7 +52,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
           <div class="container">
             <a class="navbar-brand logo" href="index.html">
-              <img src="./assets/images/logo-black.png" />
+              <img src="./assets/images/logo-white.png" />
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -61,17 +62,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item me-5">
+                <!-- <li class="nav-item me-5">
                   <a class="nav-link color-dark-200 font-semibold" aria-current="page" href="product.html">Product</a>
-                </li>
+                </li> -->
                 <li class="nav-item me-5">
-                  <a class="nav-link color-dark-200 font-semibold" href="services.html">Solution</a>
+                  <a class="solution nav-link color-dark-200 font-semibold" href="services.html">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="./services.html?service=company">Treasury strategy</a></li>
+                    <li><a href="./services.html?service=server">STP or ECN Technology Provider</a></li>
+                    <li><a href="./services.html?service=brand">Customized Solutions</a></li>
+                    <li><a href="./services.html?service=dealingsupport">Dealing or Hedge Account Management</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item me-5">
                   <a class="nav-link color-dark-200 font-semibold" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item me-5">
-                  <a class="nav-link color-dark-200 font-semibold" href="news.html">News</a>
+                  <a class="nav-link color-dark-200 font-semibold" href="news.html">Career</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link color-dark-200 font-semibold" href="contact.html">Contact Us</a>
@@ -96,8 +103,9 @@
             <div class="col-md-6 d-flex align-items-center mb-5 mb-md-0">
               <div>
                 <div class="heroText mb-5">
-                  <h1 class="font-xl font-semibold color-dark-200">
-                    The lowest white label price here only 45 days!
+                  <p class="color-dark-200 font-xl">Our Business</p>
+                  <h1 class="font-md-2 font-semibold color-lighter-black">
+                    TurnkeyID develop machine learning technology for derivative broker to perform risk management & treasury optimization.
                   </h1>
                 </div>
               </div>
@@ -131,14 +139,14 @@
     </div>
   </div>
   <div class="sectionWrapper">
-    <div class="accordionWrapper container d-block d-md-none">
+    <div class="accordionWrapper mb-5 container d-block d-md-none">
       <h3 class="font-lg font-semibolder mb-4 text-center">Our Services</h3>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="accordion-company">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Treasury strategy
+              Treasury Strategy
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="accordion-company"
@@ -156,36 +164,10 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="accordion-dashboard">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Dashboard Building
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="accordion-dashboard"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <div class="imgContainer mb-3">
-                <img src="./assets/images/profesional.jpg" />
-              </div>
-              <p class="text-justify ">
-                TurnkeyID provides a SAAS Dashboard that could be accessed by
-                your broker to maintain their clients with Multi-Account
-                Management Solutions - PAMM/MAM. PAMM/MAM (Percentage
-                Allocation Money Management) will work by managing account
-                services, which become the most popular automatic trading
-                nowadays. By adjusting this dashboard to your system, it will
-                be easier for you to build a relationship with your clients
-                and do the rebate or copy trade system.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
           <h2 class="accordion-header" id="accordion-server">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-              STP or ECN technology provider
+              STP or ECN Technology Provider
             </button>
           </h2>
           <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="accordion-server"
@@ -203,59 +185,12 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="accordion-brand">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-              Customized solutions
-            </button>
-          </h2>
-          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="accordion-brand"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <div class="imgContainer mb-3">
-                <img src="./assets/images/it.jpg" />
-              </div>
-              <p class="text-justify ">
-                We support our client’s ability to customize based on our services. Our clients will be able to mix and
-                match our services based on our client’s needs. Feel free to reach us out through (link contact) to know
-                more about our customized solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="accordion-copytrade">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Copy Trade
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="accordion-copytrade"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <div class="imgContainer mb-3">
-                <img src="./assets/images/trading.jpg" />
-              </div>
-              <p class="text-justify ">
-                Copy Trade is a trading service system that was designed to
-                give you guaranteed profit. Through the copy trade system, we
-                ease the work of beginner traders and experienced traders.
-                Copy trade trading service was built to allow your customer
-                trade on the market by copying master trader open positions.
-                The open positions were managed by the master trader rightaway
-                which are definitely trustworthy. You could copy the orders
-                from the master trader’s account easily and quickly.
-              </p>
-            </div>
-          </div>
-        </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="accordion-dealingsupport">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-              Dealing or hedge account management
+              Dealing or Hedge Account Management
             </button>
           </h2>
           <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="accordion-dealingsupport"
@@ -268,6 +203,28 @@
                 No more MT4/MT5 server problems such as instruments, groups configuration, data feed connectivity,
                 latency arbitrage trading, and dealing with client claims because TurnkeyID is here to help. With our
                 experienced teams, we offer aid in solving these problems of yours with maximum outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="accordion-brand">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              Customized Solutions
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="accordion-brand"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="imgContainer mb-3">
+                <img src="./assets/images/it.jpg" />
+              </div>
+              <p class="text-justify ">
+                We support our client’s ability to customize based on our services. Our clients will be able to mix and
+                match our services based on our client’s needs. Feel free to reach us out through (link contact) to know
+                more about our customized solutions.
               </p>
             </div>
           </div>
@@ -291,7 +248,7 @@
                       <img src="./assets/images/icon.png" alt="icon" />
                     </div>
                     <p class="font-semibolder text-center iconTitle mb-">
-                      Treasury strategy
+                      Treasury Strategy
                     </p>
                   </div>
                   <div class="
@@ -337,7 +294,31 @@
                       <img src="./assets/images/icon-6.png" alt="icon" />
                     </div>
                     <p class="font-semibolder text-center iconTitle mb-">
-                      STP or ECN technology provider
+                      STP or ECN Technology Provider
+                    </p>
+                  </div>
+                  <div class="
+                        btnContainer
+                        d-flex
+                        justify-content-center
+                        mt-auto
+                        mb-3
+                      ">
+                    <div class="buttonOutline">
+                      <div class="circleButton">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div data-target="dealingsupport" class="cardContainer dealingsupport d-flex flex-column p-4">
+                  <div class="cardContent">
+                    <div class="imageContainer text-center mb-2">
+                      <img src="./assets/images/icon-7.png" alt="icon" />
+                    </div>
+                    <p class="font-semibolder text-center iconTitle mb-">
+                      Dealing or Hedge Account Management
                     </p>
                   </div>
                   <div class="
@@ -360,54 +341,7 @@
                       <img src="./assets/images/icon-3.png" alt="icon" />
                     </div>
                     <p class="font-semibolder text-center iconTitle mb-">
-                      Customized solutions
-                    </p>
-                  </div>
-                  <div class="
-                        btnContainer
-                        d-flex
-                        justify-content-center
-                        mt-auto
-                        mb-3
-                      ">
-                    <div class="buttonOutline">
-                      <div class="circleButton">+</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="swiper-slide">
-                <div data-target="copytrade" class="cardContainer copytrade d-flex flex-column p-4">
-                  <div class="cardContent">
-                    <div class="imageContainer text-center mb-2">
-                      <img src="./assets/images/icon-5.png" alt="icon" />
-                    </div>
-                    <p class="font-semibolder text-center iconTitle mb-">
-                      Copy Trade
-                    </p>
-                  </div>
-                  <div class="
-                        btnContainer
-                        d-flex
-                        justify-content-center
-                        mt-auto
-                        mb-3
-                      ">
-                    <div class="buttonOutline">
-                      <div class="circleButton">+</div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-
-              <div class="swiper-slide">
-                <div data-target="dealingsupport" class="cardContainer dealingsupport d-flex flex-column p-4">
-                  <div class="cardContent">
-                    <div class="imageContainer text-center mb-2">
-                      <img src="./assets/images/icon-7.png" alt="icon" />
-                    </div>
-                    <p class="font-semibolder text-center iconTitle mb-">
-                      Dealing or hedge account management
+                      Customized Solutions
                     </p>
                   </div>
                   <div class="
@@ -449,7 +383,7 @@
       <div class="row">
         <div class="col-md-7 mb-5 mb-md-0">
           <div class="serviceContainer" id="company" class="mb-5">
-            <h3 class="font-lg font-semibolder mb-3">Treasury strategy</h3>
+            <h3 class="font-lg font-semibolder mb-3">Treasury Strategy</h3>
             <div class="imgContainer mb-3">
               <img src="./assets/images/company.jpg" />
             </div>
@@ -476,7 +410,7 @@
             </p>
           </div> -->
           <div class="serviceContainer" id="dealingsupport" class="mb-5">
-            <h3 class="font-lg font-semibolder mb-3">Dealing or hedge account management</h3>
+            <h3 class="font-lg font-semibolder mb-3">Dealing or Hedge Account Management</h3>
             <div class="imgContainer mb-3">
               <img src="./assets/images/dealing.jpg" />
             </div>
@@ -488,7 +422,7 @@
           </div>
           <div class="serviceContainer" id="brand" class="mb-5">
             <h3 class="font-lg font-semibolder mb-3">
-              Customized solutions
+              Customized Solutions
             </h3>
             <div class="imgContainer mb-3">
               <img src="./assets/images/it.jpg" />
@@ -517,7 +451,7 @@
             </p>
           </div>
           <div class="serviceContainer" id="server" class="mb-5">
-            <h3 class="font-lg font-semibolder mb-3">STP or ECN technology provider</h3>
+            <h3 class="font-lg font-semibolder mb-3">STP or ECN Technology Provider</h3>
             <div class="imgContainer mb-3">
               <img src="./assets/images/mt5server.jpg" />
             </div>
@@ -527,10 +461,6 @@
               offer financial intermediary using Electronic Communication Network (ECN) to offer our clients an
               immediate doorway to the FX market and equity market.
             </p>
-            <p><span class="font-semibolder">STP (straight through processing)</span> → Straight-through processing is an automated process done purely
-              through electronic transfers with no manual intervention involved.</p>
-            <p><span class="font-semibolder">ECN</span> → An ECN broker is a financial intermediary that uses electronic communications networks (ECNs) to
-              give clients direct access to other participants in equity and currency markets.</p>
           </div>
         </div>
         <div class="col-md-5 mb-5 mb-md-0">
@@ -658,6 +588,104 @@
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="keyBenefit mb-5">
+      <div class="container">
+        <h3 style="text-align: center;" class="font-lg font-semibolder mb-4">Key Benefit</h3>
+        <hr class="line" />
+        <div class="benefitsList">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="benefitContainer d-flex">
+                <div class="bulletContainer">
+                  <div class="bullet"></div>
+                </div>
+                <div class="benefitContent">
+                  <h5 class="font-semibolder font-md">
+                    Reliable Consultancy
+                  </h5>
+                  <p class="font-sm-2">
+                    Your setup cannot go wrong with the right advice and
+                    consultancy from us. Equipped with expertise, all will go
+                    fine.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="benefitContainer d-flex">
+                <div class="bulletContainer">
+                  <div class="bullet"></div>
+                </div>
+                <div class="benefitContent">
+                  <h5 class="font-semibolder font-md">
+                    Accessible System Setup
+                  </h5>
+                  <p class="font-sm-2">
+                    Monitoring all the activities in the system and managing
+                    them are such important things to be noticed, it needs
+                    ease of access in systems that we will provide to
+                    accelerate your work.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="benefitContainer d-flex">
+                <div class="bulletContainer">
+                  <div class="bullet"></div>
+                </div>
+                <div class="benefitContent">
+                  <h5 class="font-semibolder font-md">
+                    System Management Support
+                  </h5>
+                  <p class="font-sm-2">
+                    To make sure all the management on your system is running
+                    smoothly, all things are need to be learnt and practiced
+                    accurately; we provide the preparation you need to make
+                    the further steps for your system.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="benefitContainer d-flex">
+                <div class="bulletContainer">
+                  <div class="bullet"></div>
+                </div>
+                <div class="benefitContent mb-3">
+                  <h5 class="font-semibolder font-md">
+                    Keep in Touch with Liquidity Partner
+                  </h5>
+                  <p class="font-sm-2">
+                    Provide extensive hands through Liquidity Partners with
+                    less barriers.
+                  </p>
+                </div>
+              </div>
+              <div class="benefitContainer d-flex">
+                <div class="bulletContainer">
+                  <div class="bullet"></div>
+                </div>
+                <div class="benefitContent">
+                  <h5 class="font-semibolder font-md">24/5 Support</h5>
+                  <p class="font-sm-2">
+                    We offer you the right hand to feel safe and aided, along
+                    with our guidance and to your matters, in the most
+                    convenient way.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 order-first order-md-0">
+              <div class="imgContainer text-center mb-5 mb-md-0">
+                <img src="./assets/images/mockup.png" alt="mockup" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
