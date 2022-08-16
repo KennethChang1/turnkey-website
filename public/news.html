@@ -8,8 +8,8 @@
   <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="89x89">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -49,7 +49,6 @@
 
 <body>
   <div class="main">
-    <div class="roundedSquare"></div>
     <div class="careerContainer">
       <div>
         <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
@@ -121,35 +120,178 @@
 
   <div class="career-content-wrapper">
     <h3 class="font-lg font-semibolder mb-5 sectionHeader">
-      Our Culture
+      Our Values
     </h3>
-    <div class="career-card">
-      <div>
-        <img class="culture-icon" src="./assets/images/PngItem_1581750.png" alt="">
-        <p class="font-semibolder">Team Oriented</p>
-        <p>Some description about the culture</p>
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-interval="100000000"
+      data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="value">
+            <div class="value-content">
+              <h3 class="font-bold ">Team Oriented</h3>
+              <p>We are here to win and everybody has a part to play. We're making the impossible, possible. Learn from
+                your mistakes but never ever give up!</p>
+            </div>
+            <img class="value-one-icon" src="./assets/images/PngItem_1581750.png" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="value">
+            <div class="value-content">
+              <h3 class="font-bold ">Innovative</h3>
+              <p>We are here to win and everybody has a part to play. We're making the impossible, possible. Learn from
+                your mistakes but never ever give up!</p>
+            </div>
+            <img class="value-one-icon" src="./assets/images/PngItem_1581750.png" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="value">
+            <div class="value-content">
+              <h3 class="font-bold ">Professional</h3>
+              <p>We are here to win and everybody has a part to play. We're making the impossible, possible. Learn from
+                your mistakes but never ever give up!</p>
+            </div>
+            <img class="value-one-icon" src="./assets/images/PngItem_1581750.png" alt="">
+          </div>
+        </div>
       </div>
-      <div>
-        <img class="culture-icon-innovative" src="./assets/images/innovative.png" alt="">
-        <p class="font-semibolder">Innovative</p>
-        <p>Some description about the culture</p>
-      </div>
-      <div>
-        <img class="culture-icon" src="./assets/images/PngItem_1581750.png" alt="">
-        <p class="font-semibolder">Team Oriented</p>
-        <p>Some description about the culture</p>
-      </div>
-      <div>
-        <img class="culture-icon" src="./assets/images/PngItem_1581750.png" alt="">
-        <p class="font-semibolder">Team Oriented</p>
-        <p>Some description about the culture</p>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="career-content-wrapper">
+    <h3 class="font-lg font-semibolder mb-5 sectionHeader">
+      Milestones
+    </h3>
+    <div class="container">
+      <div class="main-timeline">
+
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">2 Years</span>
+                <span class="year">2013</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Visual Art &amp; Design</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
+              scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu
+              ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">1 Years</span>
+                <span class="year">2015</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Product Designer</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
+              scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu
+              ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">2 Years</span>
+                <span class="year">2016</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Web Designer</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
+              scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu
+              ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">2 Years</span>
+                <span class="year">2018</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Graphic Designer</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
+              scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu
+              ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+        <!-- end experience section-->
+
       </div>
     </div>
   </div>
 
+  <div class="career-content-wrapper">
+    <h3 class="font-lg font-semibolder mb-5 sectionHeader">
+      Activities
+    </h3>
+    <div class="activity-container">
+      <div>
+        <p class="activity-title">Lorem ipsum</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores in error odit rerum alias modi
+          exercitationem doloribus. Natus asperiores architecto ullam quis quibusdam possimus repudiandae fuga, quidem
+          dicta necessitatibus molestias.</p>
+      </div>
+      <img class="activity-img" src="./assets/images/0f949282-9894-4276-b8ac-e2b84883ad6a.jpeg" alt="">
+    </div>
+  </div>
+
+  <div class="career-content-wrapper">
+    <h3 class="font-lg font-semibolder mb-5 sectionHeader">
+      Story from the team
+    </h3>
+  </div>
+
   <div class="career-content-wrapper bg-orange">
     <h3 class="font-lg font-semibolder mb-5 sectionHeader">
-      Open Positions
+      Available Roles
     </h3>
     <div class="job-container">
       <div class="job-card">
@@ -191,13 +333,6 @@
         <a class="job-btn" href="#">Apply</a>
       </div>
     </div>
-
-  </div>
-
-  <div class="career-content-wrapper">
-    <h3 class="font-lg font-semibolder mb-5 sectionHeader">
-      Perks and Benefits
-    </h3>
   </div>
 
   <!-- <div class="sectionWrapper" id="news">
@@ -282,8 +417,14 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- BOOTSTRAP BUNDLE -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
   </script>
   <!-- SWIPER -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
