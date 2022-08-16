@@ -8,9 +8,12 @@
   <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="89x89">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
   <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- NOTIFLIX -->
@@ -19,23 +22,36 @@
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="./styles/global.css" />
   <link rel="stylesheet" href="./styles/home2.css" />
+  <link rel="stylesheet" href="./styles/career.css" />
 
-  <link rel="stylesheet" href="./styles/news.css" />
-  <title>Turnkey - News</title>
+  <!-- <link rel="stylesheet" href="./styles/news.css" /> -->
+  <title>Turnkey - Career</title>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-ML7P288');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-ML7P288');
+  </script>
   <!-- End Google Tag Manager -->
 </head>
 
 <body>
   <div class="main">
-    <div class="heroContainer">
-      <div class="overlay">
+    <div class="roundedSquare"></div>
+    <div class="careerContainer">
+      <div>
         <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
           <div class="container">
             <a class="navbar-brand logo" href="index.html">
@@ -86,57 +102,105 @@
               <i class="fab fa-linkedin font-md-2"></i>
             </div>
           </div>
-          <div class="row flex-fill">
-            <div class="col-md-6 d-flex align-items-center mb-5 mb-md-0">
-              <div>
-                <div class="heroText mb-5">
-                  <h1 class="font-xl font-semibold color-dark-200">WHAT'S NEW</h1>
-                  <p class="font-size-md color-dark-200">
-                    Forex brokers rely on our team of dedicated specialists to facilitate business growth through attentive platform servicing and user assistance.
-                  </p>
-                </div>
+          <div class="hero-container">
+            <div class="hero-content">
+              <div class="heroText mb-5">
+                <h1 class="font-xl">
+                  Join our team
+                </h1>
+                <p class="hero-copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quibusdam esse
+                  ratione explicabo nostrum doloribus, repellat velit accusantium molestiae! A laboriosam libero beatae
+                  similique ex, tempora corrupti eos obcaecati labore.</p>
               </div>
             </div>
-            <div class="col-md-6 d-flex align-items-center">
-              <div class="heroImg">
-                <img src="./assets/images/mackbook.png" />
-              </div>
-            </div>
-          </div>
-          <div class="
-                socialsContainer
-                d-flex d-md-none
-                align-items-center
-                justify-content-center
-                color-black-200
-                mt-5
-              ">
-            <a href="https://www.linkedin.com/company/turnkeyid" target="_blank" class="
-                  socialText
-                  font-md-2 font-bold
-                  mb-0
-                  me-2
-                  color-dark-200
-                  text-decoration-none
-                ">Follow Us</a>
-            <i class="fab fa-linkedin font-md-2"></i>
           </div>
         </div>
       </div>
     </div>
-    <div class="container my-5" id="container-news" style="display: none;background: #fffbef;">
-      <div class="row" id="body_of_news">
+  </div>
 
-        <!-- <div class="col-6 col-md-4 col-lg-3 mb-3" onclick="window.location.href = '/news-show.html'  "> <div class="card-berita"> <img src="/assets/images/hero.png" alt="" class="w-100"> <h1>Judul berita</h1> <p></p> </div> </div> -->
-
+  <div class="career-content-wrapper">
+    <h3 class="font-lg font-semibolder mb-5 sectionHeader">
+      Our Culture
+    </h3>
+    <div class="career-card">
+      <div>
+        <img class="culture-icon" src="./assets/images/PngItem_1581750.png" alt="">
+        <p class="font-semibolder">Team Oriented</p>
+        <p>Some description about the culture</p>
       </div>
-      <div class="d-flex justify-content-center">
-        <button id="btnLoadText" class="btn" onclick="load_more();" style="display: none;border:1px solid #000;border-radius: 10px;">Load More</button>
+      <div>
+        <img class="culture-icon-innovative" src="./assets/images/innovative.png" alt="">
+        <p class="font-semibolder">Innovative</p>
+        <p>Some description about the culture</p>
+      </div>
+      <div>
+        <img class="culture-icon" src="./assets/images/PngItem_1581750.png" alt="">
+        <p class="font-semibolder">Team Oriented</p>
+        <p>Some description about the culture</p>
+      </div>
+      <div>
+        <img class="culture-icon" src="./assets/images/PngItem_1581750.png" alt="">
+        <p class="font-semibolder">Team Oriented</p>
+        <p>Some description about the culture</p>
       </div>
     </div>
   </div>
 
-  <div class="sectionWrapper" id="news">
+  <div class="career-content-wrapper bg-orange">
+    <h3 class="font-lg font-semibolder mb-5 sectionHeader">
+      Open Positions
+    </h3>
+    <div class="job-container">
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <p class="job-title font-bold">Email Marketing Specialist</p>
+            <p class="job-copy">Remote</p>
+          </div>
+          <p class="job-info">Full Time</p>
+        </div>
+        <p class="job-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit unde perferendis
+          minima nesciunt!</p>
+        <a class="job-btn" href="#">Apply</a>
+      </div>
+
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <p class="job-title font-bold">Ads Copywriter</p>
+            <p class="job-copy">Remote</p>
+          </div>
+          <p class="job-info">Intern</p>
+        </div>
+        <p class="job-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit unde perferendis
+          minima nesciunt!</p>
+        <a class="job-btn" href="#">Apply</a>
+      </div>
+
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <p class="job-title font-bold">Email Marketing Specialist</p>
+            <p class="job-copy">Remote</p>
+          </div>
+          <p class="job-info">Full Time</p>
+        </div>
+        <p class="job-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit unde perferendis
+          minima nesciunt!</p>
+        <a class="job-btn" href="#">Apply</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div class="career-content-wrapper">
+    <h3 class="font-lg font-semibolder mb-5 sectionHeader">
+      Perks and Benefits
+    </h3>
+  </div> -->
+
+  <!-- <div class="sectionWrapper" id="news">
     <div class="subcribe bc1">
       <div class="container">
         <div class="bc2">
@@ -155,7 +219,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <div id="footer">
@@ -215,9 +279,12 @@
     </div>
   </div>
   <!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- BOOTSTRAP BUNDLE -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
   <!-- SWIPER -->
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -237,81 +304,80 @@
     var btnLoadText = "Load More"
     // get blog
     axios.get('https://blog.turnkey.id/wp-json/wp/v2/posts?per_page=4&offset=0')
-        .then(function(response){
-            if(response.data.length != 0)
-            {
-              // handle success
-              console.log(response);
-              dataBlog = response.data;
-              load_remaining = parseInt(response.headers['x-wp-total']) - 4;
-              console.log(load_remaining);
-              if(load_remaining < 1)
-              {
-                $("#btnLoadText").hide();
-              }else{
-                $("#btnLoadText").show();
-              }
-              // update_news();
-              // $("#container-news").show();
-            }else{
-              $("#container-news").hide();
-            }
-          }).catch(function(error){
-            // handle error
-            console.log(error);
-        })
-    function load_more()
-    {
+      .then(function (response) {
+        if (response.data.length != 0) {
+          // handle success
+          console.log(response);
+          dataBlog = response.data;
+          load_remaining = parseInt(response.headers['x-wp-total']) - 4;
+          console.log(load_remaining);
+          if (load_remaining < 1) {
+            $("#btnLoadText").hide();
+          } else {
+            $("#btnLoadText").show();
+          }
+          // update_news();
+          // $("#container-news").show();
+        } else {
+          $("#container-news").hide();
+        }
+      }).catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+
+    function load_more() {
       $("#btnLoadText").show();
       btnLoadText = "Loading..."
       $("#btnLoadText").html(btnLoadText);
-      axios.get('https://blog.turnkey.id/wp-json/wp/v2/posts?per_page=4&offset='+(current_load * 4))
-        .then(function(response){
-            // handle success
-            console.log(response.data);
-            console.log(dataBlog);
-            // append data
-            response.data.forEach(function(item){
-                dataBlog.push(item);
-                // console.log(item);
-                // update_news();
-            });
-            current_load++
-            load_remaining--;
-            console.log(load_remaining)
-            if(load_remaining < 1)
-            {
-              $("#btnLoadText").hide();
-            }
+      axios.get('https://blog.turnkey.id/wp-json/wp/v2/posts?per_page=4&offset=' + (current_load * 4))
+        .then(function (response) {
+          // handle success
+          console.log(response.data);
+          console.log(dataBlog);
+          // append data
+          response.data.forEach(function (item) {
+            dataBlog.push(item);
+            // console.log(item);
+            // update_news();
+          });
+          current_load++
+          load_remaining--;
+          console.log(load_remaining)
+          if (load_remaining < 1) {
+            $("#btnLoadText").hide();
+          }
 
-            btnLoadText = "Load More"
-            $("#btnLoadText").html(btnLoadText);
-        }).catch(function(error){
-            // handle error
-            console.log(error);
+          btnLoadText = "Load More"
+          $("#btnLoadText").html(btnLoadText);
+        }).catch(function (error) {
+          // handle error
+          console.log(error);
         })
     }
     // generate html news
-    function update_news()
-    {
+    function update_news() {
       console.log("News updated");
       console.log(dataBlog);
       $("#body_of_news").html("");
-      dataBlog.forEach((item,index)=>{
-        if(item.jetpack_featured_media_url)
-        {
-        $("#body_of_news").append("<div class='col-6 col-md-4 col-lg-3 mb-3' onclick="+'"'+"window.location.href = '/news-show.html?q="+item.slug+"'  "+'"'+"> <div class='card-berita'> <img src='"+item.jetpack_featured_media_url+"' alt='' class='w-100'> <h1>"+item.title.rendered+"</h1> <p></p> </div> </div>");
-        }else{
-        $("#body_of_news").append("<div class='col-6 col-md-4 col-lg-3 mb-3' onclick="+'"'+"window.location.href = '/news-show.html?q="+item.slug+"'  "+'"'+"> <div class='card-berita'> <h1>"+item.title.rendered+"</h1> <p></p> </div> </div>");
+      dataBlog.forEach((item, index) => {
+        if (item.jetpack_featured_media_url) {
+          $("#body_of_news").append("<div class='col-6 col-md-4 col-lg-3 mb-3' onclick=" + '"' +
+            "window.location.href = '/news-show.html?q=" + item.slug + "'  " + '"' +
+            "> <div class='card-berita'> <img src='" + item.jetpack_featured_media_url +
+            "' alt='' class='w-100'> <h1>" + item.title.rendered + "</h1> <p></p> </div> </div>");
+        } else {
+          $("#body_of_news").append("<div class='col-6 col-md-4 col-lg-3 mb-3' onclick=" + '"' +
+            "window.location.href = '/news-show.html?q=" + item.slug + "'  " + '"' +
+            "> <div class='card-berita'> <h1>" + item.title.rendered + "</h1> <p></p> </div> </div>");
         }
       })
     }
-    
   </script>
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML7P288"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML7P288" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 </body>
 

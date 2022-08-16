@@ -1,0 +1,82 @@
+.careerContainer {
+    min-height: 100vh;
+    background-image: url(../assets/images/redd-PTRzqc_h1r4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.career-content-wrapper{
+    text-align: center;
+    padding-top: 5.625rem;
+}
+
+.bg-orange{
+    background-color: coral;
+    padding-bottom: 100px;
+}
+
+.hero-copy{
+    width: 80%;
+}
+
+.culture-icon{
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.culture-icon-innovative{
+    width: 125px;
+}
+
+.career-card{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 10;
+    margin-bottom: 100px;
+}
+
+.job-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.job-card{
+    position: relative;
+    box-shadow: 0px 0px 25px rgb(56 54 55 / 25%);
+    text-align: left;
+    width: 80%;
+    height: 100%;
+    max-width: 384px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+}
+
+.job-info{
+    font-size: 12px;
+    background-color: coral;
+    color: white;
+    padding: 5px;
+}
+
+.job-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.job-copy{
+    font-size: 14px;
+}
+
+.job-title{
+    margin-bottom: 0;
+}
+
+.job-btn{
+    text-decoration: none;
+    color: coral;
+}
