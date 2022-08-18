@@ -220,6 +220,10 @@
   object-fit: cover;
 }
 
+.service-hero-copy{
+  font-size: 16px;
+}
+
 #otherServices {
   position: relative;
   z-index: 15;

@@ -23,11 +23,24 @@
 }
 
 .hero-copy{
-    width: 80%;
+    font-size: 24px;
+}
+
+.hero-container{
+    justify-content: center;
+    text-align: center;
 }
 
 .value-one-icon{
     width: 50%;
+}
+
+.value-mindful-icon{
+    width: 40%;
+}
+
+.value-nobel-icon{
+    width: 40%;
 }
 
 .value-content{
@@ -137,7 +150,7 @@
     display: block;
     width: 2px;
     height: 100%;
-    background: #c6c6c6;
+    background: black;
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -210,7 +223,7 @@
     content: "";
     width: 36.5%;
     height: 2px;
-    background: coral;
+    background: black;
     margin: auto 0;
     position: absolute;
     top: 0;
@@ -243,7 +256,7 @@
 
 .main-timeline .date-outer:before {
     background: #fff;
-    border: 2px solid coral;
+    border: 2px solid #232323;
     left: -6px
 }
 
@@ -381,22 +394,18 @@
 .activity-container{
     display: flex;
     justify-content: center;
-    padding: 20px 150px;
+    padding: 20px 5%;
     text-align: left;
+    gap: 10px;
 }
 
 .activity-img{
-    width: 500px;
+    width: 40%;
 }
 
 .activity-title{
     font-size: 24px;
     font-weight: bold;
-}
-
-.carousel-img{
-    border-radius: 10px;
-    width: 50%;
 }
 
 @media only screen and (max-width: 515px){
@@ -415,6 +424,52 @@
 }
 
 /* story */
-.story-img{
-    width: 580px;
+.carousel-img{
+    border-radius: 10px;
+    width: 30%;
+    height: 400px;
+}
+
+.story-position{
+    opacity: 80%;
+}
+
+.value-content-width{
+    flex-basis: 70%;
+}
+
+@media only screen and (max-width: 515px){
+    .carousel-img{
+        width: 100%;
+    }
+
+    .story-position{
+        width: 75%;
+    }
+
+    .value-copy-story{
+        height: 250px;
+    }
+}
+
+/* recruitment process */
+.recruit-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+.steps{
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    line-height: normal;
+    margin: auto;
+}
+
+.recruit-icon{
+    width: 50px;
 }
