@@ -393,19 +393,56 @@
 /* activity */
 .activity-container{
     display: flex;
-    justify-content: center;
     padding: 20px 5%;
     text-align: left;
-    gap: 10px;
+    gap: 100px;
+}
+
+#carousel-activity{
+    flex-basis: 70%;
 }
 
 .activity-img{
-    width: 40%;
+    width: 100%;
 }
 
+.activity-img-container{
+    position: relative;
+}
+
+.activity-desc{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+    width: fit-content;
+}
+
+.indicator-activity{
+    position: absolute;
+    bottom: -15%;
+}
+
+/* .activity-img-container{
+    height: 600px;
+}
+
+@media (max-width: 1024px){
+    .activity-img-container{
+        height: 370px;
+    }
+} */
+
 .activity-title{
-    font-size: 24px;
+    font-size: 55px;
+    line-height: normal;
     font-weight: bold;
+}
+
+.activity-header{
+    /* flex-basis: 50%; */
+    text-align: right;
 }
 
 @media only screen and (max-width: 515px){
@@ -457,19 +494,33 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    width: 60%;
+    width: fit-content;
     margin: auto;
 }
 
 .steps{
+    display: flex;
+    align-items: center;
     background-color: white;
     border-radius: 10px;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     line-height: normal;
     margin: auto;
+    padding: 10px;
 }
 
 .recruit-icon{
     width: 50px;
+}
+
+.steps-name{
+    text-align: left;
+    width: 70%;
+}
+
+.steps-number{
+    flex-grow: 1;
+    font-size: 60px;
+    opacity: 70%;
 }
