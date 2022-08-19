@@ -23,7 +23,7 @@
 }
 
 .hero-copy{
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .hero-container{
@@ -71,6 +71,7 @@
     gap: 50px;
     width: 80%;
     margin: auto;
+    align-items: center;
 }
 
 @media (max-width: 575px){
@@ -97,14 +98,7 @@
 
     .value-content{
         text-align: center;
-    }
-
-    .value-title{
-        width: 75%;
-    }
-
-    .value-copy{
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -153,6 +147,14 @@
 .job-btn{
     text-decoration: none;
     color: coral;
+}
+
+@media (max-width: 575px){
+    .job-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 /* milestone */
@@ -409,6 +411,7 @@
 /* activity */
 .activity-container{
     display: flex;
+    align-items: center;
     padding: 20px 5%;
     text-align: left;
     gap: 100px;
@@ -489,6 +492,7 @@
     width: 30%;
     height: 400px;
     opacity: 50%;
+    object-fit: cover;
 }
 
 .active{
@@ -512,16 +516,22 @@
 }
 
 @media only screen and (max-width: 515px){
-    .carousel-img{
-        width: 100%;
-    }
-
-    .story-position{
-        width: 75%;
+    .carousel-img-container{
+        margin-bottom: 30px;
     }
 
     .value-copy-story{
-        height: 250px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .carousel-card{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .carousel-img-container{
+        width: 100%;
     }
 }
 
