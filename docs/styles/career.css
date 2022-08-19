@@ -83,6 +83,18 @@
         width: 100%;
     }
 
+    .value-two-icon{
+        width: 100%;
+    }
+
+    .value-nobel-icon{
+        width: 100%;
+    }
+
+    .value-mindful-icon{
+        width: 100%;
+    }
+
     .value-content{
         text-align: center;
     }
@@ -421,6 +433,8 @@
     bottom: 10px;
     margin: auto;
     width: fit-content;
+    color: white;
+    font-weight: 900;
 }
 
 .indicator-activity{
@@ -465,10 +479,28 @@
 }
 
 /* story */
+.carousel-card{
+    display: flex;
+    padding: 0 50px;
+}
+
 .carousel-img{
     border-radius: 10px;
     width: 30%;
     height: 400px;
+    opacity: 50%;
+}
+
+.active{
+    opacity: 100%;
+}
+
+.carousel-indicator-story{
+    bottom: -50px;
+}
+
+.carousel-img-container{
+    width: 1000px;
 }
 
 .story-position{
@@ -527,4 +559,16 @@
     flex-grow: 1;
     font-size: 60px;
     opacity: 70%;
+}
+
+@media only screen and (max-width: 515px){
+    .recruit-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .steps{
+        width: 150px;
+        height: 150px;
+    }
 }
