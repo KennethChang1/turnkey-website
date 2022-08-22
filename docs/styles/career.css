@@ -14,7 +14,7 @@
 }
 
 .bg-orange{
-    background-color: coral;
+    background-color: #f96209;
     padding-bottom: 100px;
 }
 
@@ -31,12 +31,44 @@
     text-align: center;
 }
 
+.value-title::first-letter{
+    color: #f96209;
+}
+
 .value-one-icon{
     width: 50%;
+    height: 330px;
 }
 
 .value-two-icon{
     width: 40%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#carouselExampleControls{
+    position: relative;
+}
+
+.carousel-indicator-values{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.highlight{
+    color: #f96209;
+}
+
+.carousel-inner-value{
+    height: 300px;
+    margin-bottom: 3rem;
+}
+
+.carousel-indicator-values>p{
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .value-mindful-icon{
@@ -274,7 +306,7 @@
 
 .main-timeline .date-outer:before {
     background: #fff;
-    border: 2px solid #232323;
+    border: 2px solid #f96209;
     left: -6px
 }
 
@@ -409,65 +441,38 @@
 }
 
 /* activity */
-.activity-container{
-    display: flex;
-    align-items: center;
-    padding: 20px 5%;
-    text-align: left;
-    gap: 100px;
-}
-
-#carousel-activity{
-    flex-basis: 70%;
-}
-
-.activity-img{
-    width: 100%;
-}
-
-.activity-img-container{
-    position: relative;
-}
-
-.activity-desc{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 10px;
-    margin: auto;
-    width: fit-content;
-    color: white;
-    font-weight: 900;
-}
-
-.indicator-activity{
-    position: absolute;
-    bottom: -15%;
-}
-
-/* .activity-img-container{
-    height: 600px;
-}
-
-@media (max-width: 1024px){
-    .activity-img-container{
-        height: 370px;
-    }
-} */
-
 .activity-title{
     font-size: 55px;
     line-height: normal;
     font-weight: bold;
 }
 
-.activity-header{
-    /* flex-basis: 50%; */
-    text-align: right;
+.activity-img-wrapper{
+    display: grid;
+    padding: 1rem 5rem;
+    gap: 2rem;
+    max-width: 1440px;
+    margin: auto;
 }
 
+.activity-grid-one{
+    grid-template-columns: 40% auto auto;
+}
+
+.activity-grid-two{
+    grid-template-columns: auto auto 40%;
+}
+
+.activity-img{
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
 @media only screen and (max-width: 515px){
-    .activity-container{
+    /* .activity-container{
         flex-direction: column;
         padding: 20px 5%;
     }
@@ -478,7 +483,7 @@
 
     .value-reverse{
         flex-direction: column;
-    }
+    } */
 }
 
 /* story */
@@ -513,6 +518,12 @@
 
 .value-content-width{
     flex-basis: 70%;
+}
+
+.career-content-story{
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 8rem;
 }
 
 @media only screen and (max-width: 515px){

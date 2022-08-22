@@ -3,7 +3,7 @@
 }
 
 .navbar .nav-link {
-  color: var(--color-black-200) !important;
+  color: var(--color-black-200);
 }
 
 .heroContainer {

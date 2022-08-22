@@ -103,7 +103,7 @@ button {
 }
 
 .navbar .nav-link {
-  color: var(--color-white) !important;
+  color: var(--color-white);
 }
 
 .navbar.scrolled {
@@ -119,6 +119,10 @@ button {
 
 .color-lighter-black {
   color: var(--color-lighter-black) !important;
+}
+
+.color-white{
+  color: var(--color-white) !important;
 }
 
 .text-justify {
