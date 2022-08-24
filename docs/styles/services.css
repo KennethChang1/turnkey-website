@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.navbar .nav-link {
-  color: var(--color-black-200) !important;
-}
-
 .heroContainer {
   min-height: 100vh;
   background-image: url(../assets/images/service-bg.png);
