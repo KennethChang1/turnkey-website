@@ -287,6 +287,10 @@
   background-repeat: no-repeat;
 }
 
+#testimonial .container{
+  visibility: hidden;
+}
+
 #testimonial .imgContainer {
   width: 100px;
   height: 100px;
