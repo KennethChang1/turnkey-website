@@ -1,0 +1,206 @@
+.main {
+  position: relative;
+}
+
+.navbar .nav-link {
+  color: var(--color-black-200) !important;
+}
+
+.heroContainer {
+  min-height: 100vh;
+  background-image: url(../assets/images/hero-2.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.sectionHeader {
+  color: var(--color-lighter-black);
+}
+
+.main .roundedSquare {
+  width: 1500px;
+  height: 1100px;
+  left: -830px;
+  top: -120px;
+  transform: rotate(135deg);
+}
+
+.roundedSquare {
+  height: 300px;
+  width: 300px;
+  background: var(--color-primary-400);
+  position: absolute;
+  border-radius: 100px;
+  z-index: 9;
+  box-shadow: 0px 0px 88px rgba(0, 0, 0, 0.2);
+}
+
+.benefitsList img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+#hero .swiper-container {
+  max-width: 650px;
+  min-height: 330px;
+}
+
+#hero .socials .socialText {
+  position: absolute;
+  transform: rotate(90deg);
+  margin: 0;
+  top: -55px;
+  left: -79px;
+  width: 180px;
+}
+
+#hero .slideContent {
+  max-width: 650px;
+}
+
+#hero .swiper-pagination {
+  text-align: left;
+}
+
+#hero .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+#hero .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--color-primary-400);
+}
+
+#hero {
+  min-height: 100vh;
+  padding-bottom: 3.75rem;
+  padding-top: 4.5rem;
+  position: relative;
+  z-index: 9;
+}
+
+#hero .heroText {
+  color: var(--color-white);
+  font-weight: 500;
+  max-width: 600px;
+}
+
+#hero .socials {
+  position: absolute;
+  right: 0;
+  bottom: 45%;
+  transform: translateY(50%);
+}
+
+#hero .socials .socialsContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.formContainer {
+  max-width: 350px;
+  background-color: var(--color-white);
+  border-radius: 1.25rem;
+}
+
+.formHeader p {
+  font-weight: 600;
+  font-size: var(--font-size-md);
+}
+
+.formContainer input {
+  background-color: var(--color-white-100);
+  border: none !important;
+  font-size: var(--font-size-sm);
+}
+
+#metatrader {
+  position: relative;
+  z-index: 9;
+}
+
+#metatrader p {
+  color: var(--color-grey-400);
+}
+
+.keyBenefit {
+  position: relative;
+  z-index: 9;
+}
+
+.keyBenefit .line {
+  height: 3px;
+  background-color: var(--color-white-300);
+}
+
+.keyBenefit .bulletContainer {
+  flex: 0 0 10%;
+}
+
+.keyBenefit .bulletContainer .bullet {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-primary-400);
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.keyBenefit .benefitContainer .benefitContent p {
+  color: var(--color-grey-400);
+}
+
+.keyBenefit .imgContainer.phone img {
+  max-width: 500px;
+}
+
+.keyBenefit .imgContainer img {
+  width: auto;
+  object-fit: initial;
+  text-align: center;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+
+  #hero .socials .socialText {
+    top: -35px;
+  }
+
+  #hero .socials {
+    right: -25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .keyBenefit .imgContainer.phone img {
+    max-width: 300px;
+  }
+
+  #hero {
+    padding-top: 8rem;
+  }
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 80%;
+  }
+
+  .main .roundedSquare {
+    width: 800px;
+    height: 500px;
+    left: -200px;
+    top: -70px;
+    transform: rotate(135deg);
+  }
+}

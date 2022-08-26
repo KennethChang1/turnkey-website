@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="89x89">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- NOTIFLIX -->
+  <link rel="stylesheet" href="./vendor/notiflix/notiflix-2.7.0.min.css" />
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/home2.css" />
+  <link rel="stylesheet" href="./styles/career.css" />
+
+  <!-- <link rel="stylesheet" href="./styles/news.css" /> -->
+  <title>Turnkey - Career</title>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-ML7P288');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <div class="main">
+    <div class="careerContainer">
+      <div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+          <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+              <img src="./assets/images/logo-white.png" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item me-5">
+                  <a class="nav-link color-dark-200 font-semibold" aria-current="page" href="product.html">Product</a>
+                </li> -->
+                <li class="nav-item me-md-5">
+                  <a class="solution nav-link color-white font-semibold" href="services.html">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="./services.html?service=company">Treasury strategy</a></li>
+                    <li><a href="./services.html?service=server">STP or ECN technology provider</a></li>
+                    <li><a href="./services.html?service=dealingsupport">Dealing or hedge account management</a></li>
+                    <li><a href="./services.html?service=brand">Customized solutions</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item me-md-5">
+                  <a class="nav-link color-white font-semibold" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item me-md-5">
+                  <a class="nav-link color-white font-semibold" href="career.html">Career</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link color-white font-semibold" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div id="hero" class="container d-flex flex-column">
+          <div class="socials color-dark-200 d-none d-md-block">
+            <div class="socialsContainer">
+              <p class="socialText font-md-2 font-bold color-white text-decoration-none">Follow Us</p>
+              <a href="https://www.linkedin.com/company/turnkeyid" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-linkedin"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/lifeatturnkey/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-instagram"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-container">
+            <div class="hero-content">
+              <div class="heroText mb-5">
+                <h1 class="font-xl font-bold">
+                  We Invest in People
+                </h1>
+                <p class="hero-copy">Come along, be part of our greatest assets!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="career-content-wrapper">
+    <h3 class="font-lg font-semibolder mb-5 sectionHeader">
+      Our Values
+    </h3>
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-interval="100000000"
+      data-bs-ride="carousel">
+      <div class="carousel-inner carousel-inner-value">
+        <div class="carousel-item active">
+          <div class="value">
+            <div class="value-content">
+              <h3 class="font-bold value-title">Honesty</h3>
+              <p class="value-copy">We put a strong emphasis on honesty to develop consistency in how we present our
+                integrity. We fully embed clear communication, openness, and truthfulness in our organization as it
+                supports our wellbeing and continuous improvement.</p>
+            </div>
+            <img class="value-one-icon" src="./assets/images/honesty.jpg" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="value">
+            <div class="value-content">
+              <h3 class="font-bold value-title">Unstoppable</h3>
+              <p class="value-copy">We form an unstoppable team by leaning on adaptability, agility and teachability to
+                grow along with us. We reframe the uncertainty challenges of future comings as a situation with exciting
+                possibilities. </p>
+            </div>
+            <img class="value-one-icon" src="./assets/images/unstoppable.jpg" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="value">
+            <div class="value-content">
+              <h3 class="font-bold value-title">Mindful</h3>
+              <p class="value-copy">Our principle is to be aware of the present moments. We’re working to gently pay
+                attention to what’s
+                going on without passing any judgment. We aim to support one another throughout the day and create
+                enjoyment of work.</p>
+            </div>
+            <img class="value-mindful-icon" src="./assets/images/mindful.jpg" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="value">
+            <div class="value-content">
+              <h3 class="font-bold value-title">Autonomous</h3>
+              <p class="value-copy">We grant our people the flexibility to adjust their way to work for the tasks in
+                which they are in
+                charge. Our doers have control over their own work to achieve the goals faster. We want people to not
+                set any limitations and open up a wider range of solutions to create a better workplace.</p>
+            </div>
+            <img class="value-two-icon" src="./assets/images/autonomous.jpg" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="value">
+            <div class="value-content">
+              <h3 class="font-bold value-title">Nobel</h3>
+              <p class="value-copy">Our people have faith in themselves and their abilities which are manifest in their
+                valuable
+                contributions. We are enthusiastic to always perform and maintain a high-quality of work. </p>
+            </div>
+            <img class="value-nobel-icon" src="./assets/images/noble.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicator-values">
+        <p class="indicator highlight" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"
+          aria-current="true" aria-label="1">H</p>
+        <p class="indicator" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="2">U</p>
+        <p class="indicator" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="3">M</p>
+        <p class="indicator" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="4">A</p>
+        <p class="indicator" data-bs-target="#carouselExampleControls" data-bs-slide-to="4" aria-label="5">N</p>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="career-content-wrapper bg-orange">
+    <div class="activity-container">
+      <div class="activity-header">
+        <p class="activity-title">What's inside TurnkeyID?</p>
+      </div>
+      <div class="activity-img-container">
+        <div class="activity-img-wrapper activity-grid-one">
+          <img class="activity-img" src="./assets/images/Independence Day - 2021.JPG" alt="">
+          <img class="activity-img" src="./assets/images/Townhall - 2020.jpeg" alt="">
+          <img class="activity-img" src="./assets/images/Team Dining - 2020.jpeg" alt="">
+        </div>
+        <div class="activity-img-wrapper activity-grid-two">
+          <img class="activity-img" src="./assets/images/Team Bonding - 2022.jpg" alt="">
+          <img class="activity-img" src="./assets/images/Team Bonding 1- 2022.jpg" alt="">
+          <img class="activity-img" src="./assets/images/Buka Bersama - 2021.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="career-content-wrapper">
+    <div class="container">
+      <div class="row text-center justify-content-center mb-5">
+        <div class="col-xl-6 col-lg-8">
+          <h3 class="font-lg font-semibolder mb-5 sectionHeader">
+            Milestones
+          </h3>
+          <!-- <p class="text-muted">We’re very proud of the path we’ve taken. Explore the history that made us the company
+            we are today.</p> -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title=""
+                data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2020, June</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Established</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title=""
+                data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2020, October</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Got Our First Client</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title=""
+                data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2020, December</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">Reached $1 Billion GTV</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title=""
+                data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2021, June</p>
+                <p class="h6 text-muted mb-0 mb-lg-0">5 Client with $200k ARR and more than $10 Billion GTV</p>
+              </div>
+            </div>
+            <div class="timeline-step mb-0">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title=""
+                data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
+                <div class="inner-circle"></div>
+                <p class="h6 mt-3 mb-1">2021, September </p>
+                <p class="h6 text-muted mb-0 mb-lg-0">First Runner Up Winner at LokalCorn Competition by Tribunnews x HP
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="career-content-wrapper bg-orange">
+    <h3 class="font-lg font-semibolder mb-5">
+      Recruitment Process
+    </h3>
+    <div class="recruit-container">
+      <div class="steps">
+        <div class="steps-name">
+          <p>Apply</p>
+          <img class="recruit-icon" src="./assets/images/icons8-set-as-resume-50.png" alt="">
+        </div>
+        <p class="font-bold steps-number">1</p>
+      </div>
+      <div class="steps">
+        <div class="steps-name">
+          <p>Assesment Test 1</p>
+          <img class="recruit-icon" src="./assets/images/icons8-assessment-64.png" alt="">
+        </div>
+        <p class="font-bold steps-number">2</p>
+      </div>
+      <div class="steps">
+        <div class="steps-name">
+          <p>Assesment Test 2</p>
+          <img class="recruit-icon" src="./assets/images/icons8-assessment2-64.png" alt="">
+        </div>
+        <p class="font-bold steps-number">3</p>
+      </div>
+      <div class="steps">
+        <div class="steps-name">
+          <p>CV Screening</p>
+          <img class="recruit-icon" src="./assets/images/icons8-screening-64.png" alt="">
+        </div>
+        <p class="font-bold steps-number">4</p>
+      </div>
+      <div class="steps">
+        <div class="steps-name">
+          <p>HR Interview and User Interview</p>
+          <img class="recruit-icon" src="./assets/images/icons8-interview-64.png" alt="">
+        </div>
+        <p class="font-bold steps-number">5</p>
+      </div>
+      <div class="steps">
+        <div class="steps-name">
+          <p>Announcement</p>
+          <img class="recruit-icon" src="./assets/images/icons8-announcement-64.png" alt="">
+        </div>
+        <p class="font-bold steps-number">6</p>
+      </div>
+      <div class="steps">
+        <div class="steps-name">
+          <p>Offer</p>
+          <img class="recruit-icon" src="./assets/images/icons8-new-job-50.png" alt="">
+        </div>
+        <p class="font-bold steps-number">7</p>
+      </div>
+      <div class="steps">
+        <div class="steps-name">
+          <p>On Board</p>
+          <img class="recruit-icon" src="./assets/images/icons8-handshake-50.png" alt="">
+        </div>
+        <p class="font-bold steps-number">8</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- story from the team -->
+  <div class="career-content-wrapper career-content-story">
+    <div id="carousel" class="carousel carousel-dark carousel-fade" data-bs-interval="20000000" data-bs-ride="carousel">
+      <div class="carousel-indicators carousel-indicator-story">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-card">
+            <div class="carousel-img-container">
+              <img class="carousel-img carousel-img-mery active"
+                src="./assets/images/Meryana Rizki (Corporate Secretary).PNG" alt="employee image">
+              <img class="carousel-img" src="./assets/images/Yanuar Jaka Permana (Data Analyst).JPG"
+                alt="employee image">
+              <img class="carousel-img" src="./assets/images/Fanny Wijaya (Business Development) .png"
+                alt="employee image">
+            </div>
+            <div class="value-content value-content-width">
+              <h3 class="font-bold">Meryana Rizki</h3>
+              <p class="story-position">Corporate Secretary</p>
+              <p class="value-copy-story">TurnkeyID was where I jumped started my career and learned more
+                about the real “work-life”. I have learned countless times and experienced pressure sometimes, but “a
+                smooth sea never made a skilled sailor”. I am much satisfied with all the capabilities I got here. Even
+                more, I love how TurnkeyID treats and supports their employees as well as lets us maintain our
+                relationship with family. </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-card">
+            <div class="carousel-img-container">
+              <img class="carousel-img" src="./assets/images/Meryana Rizki (Corporate Secretary).PNG"
+                alt="employee image">
+              <img class="carousel-img active" src="./assets/images/Yanuar Jaka Permana (Data Analyst).JPG"
+                alt="employee image">
+              <img class="carousel-img" src="./assets/images/Fanny Wijaya (Business Development) .png"
+                alt="employee image">
+            </div>
+            <div class="value-content value-content-width">
+              <h3 class="font-bold">Yanuar Jaka Permana</h3>
+              <p class="story-position">Data Analyst</p>
+              <p class="value-copy value-copy-story">Employees no longer need a fancy working space or cute office which
+                in the end suffocates their peace and enjoyment. Instead, employees need the ability to choose their
+                best zone and place to perform their work. TurnkeyID grants trust and freedom for its people to remotely
+                work through Metaverse.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-card">
+            <div class="carousel-img-container">
+              <img class="carousel-img" src="./assets/images/Meryana Rizki (Corporate Secretary).PNG"
+                alt="employee image">
+              <img class="carousel-img" src="./assets/images/Yanuar Jaka Permana (Data Analyst).JPG"
+                alt="employee image">
+              <img class="carousel-img active" src="./assets/images/Fanny Wijaya (Business Development) .png"
+                alt="employee image">
+            </div>
+            <div class="value-content value-content-width">
+              <h3 class="font-bold">Fanny Wijaya</h3>
+              <p class="story-position">Business Development</p>
+              <p class="value-copy value-copy-story">Having the opportunity and flexibility to productively work from
+                anywhere. I start my long-term plan from now on, and TurnkeyID becomes my best step to balancing work,
+                career, and family life on my own terms. It’s been a pleasure to be part of TurnkeyID.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="career-content-wrapper">
+    <h3 class="font-lg font-semibolder mb-5 sectionHeader">
+      Available Roles
+    </h3>
+    <div class="job-container">
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <p class="job-title font-bold">Email Marketing Specialist</p>
+            <p class="job-copy">Remote</p>
+          </div>
+          <p class="job-info">Full Time</p>
+        </div>
+        <!-- <p class="job-copy"></p> -->
+        <a class="job-btn" href="https://www.linkedin.com/jobs/search/?currentJobId=3208229838&f_C=65576676&geoId=92000000" target="_blank">Apply</a>
+      </div>
+
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <p class="job-title font-bold">Ads Copywriter</p>
+            <p class="job-copy">Remote</p>
+          </div>
+          <p class="job-info">Intern</p>
+        </div>
+        <!-- <p class="job-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit unde perferendis
+          minima nesciunt!</p> -->
+        <a class="job-btn" href="https://www.linkedin.com/jobs/search/?currentJobId=3193415707&f_C=65576676&geoId=92000000" target="_blank">Apply</a>
+      </div>
+
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <p class="job-title font-bold">Traffic Manager</p>
+            <p class="job-copy">Remote</p>
+          </div>
+          <p class="job-info">Full Time</p>
+        </div>
+        <!-- <p class="job-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit unde perferendis
+          minima nesciunt!</p> -->
+        <a class="job-btn" href="https://www.linkedin.com/jobs/search/?currentJobId=3203759344&f_C=65576676&geoId=92000000" target="_blank">Apply</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="sectionWrapper" id="news">
+    <div class="subcribe bc1">
+      <div class="container">
+        <div class="bc2">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="text-white">Be the first to know</h4>
+              <p class="text-white">Stay ahead of your competitors by being the first to learn about new MT4/MT5 solution innovations, white paper, release, updates, and services offers by subscribing to the turnkey.id newsletter</p>
+            </div>
+          </div>
+          <form action="" method="POST" onsubmit="subscribe_email();return false">
+            <input class="subcribe-input" type="text" name="email" id="input-email" placeholder="Submit Your Email Here" required>
+            <input class="subcribe-checkbox mb-4" type="checkbox" name="agree" required>
+            <label class="text-white" for="check-label">I agree to receive news</label>
+            <button class="subcribe-button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div id="footer">
+    <div class="roundedSquare"></div>
+    <div class="sectionWrapper bg-dark">
+      <div class="container footerInner">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="mb-5 mb-md-0">
+              <a class="logo mb-2 d-block text-center text-md-start" href="index.html">Turn<span>k</span>ey.</a>
+              <p class="address d-none d-md-block">
+                Biz Lofts uResidence Jl.
+                Boulevard Diponegoro No. 105 Karawaci, Tangerang 15810
+              </p>
+              <p class="copyright mt-0 mt-md-5 text-center text-md-start">
+                © Copyright 2021 Turnkey ID. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footerCol">
+              <p class="footerColHeader">Our Profile</p>
+              <div class="d-flex flex-column">
+                <a class="footerLink mb-2" href="product.html">Product</a>
+                <a class="footerLink mb-2" href="services.html">Services</a>
+                <a class="footerLink mb-2" href="about.html">About</a>
+                <a class="footerLink mb-2" href="career.html">Career</a>
+                <a class="footerLink" href="faq.html">FAQ</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footerCol">
+              <p class="footerColHeader">Follow Us</p>
+              <div class="d-flex flex-column">
+                <a class="footerLink" href="https://www.linkedin.com/company/turnkeyid" target="_blank">Linkedin</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footerCol">
+              <p class="footerColHeader">Contact Us</p>
+              <div class="d-flex flex-column">
+                <a class="footerLink mb-2" href="#">P: +62-8123-1425-090</a>
+                <a class="footerLink mb-2" href="#">E: office@turnkey.id</a>
+                <a class="footerLink" href="#">T: 02.00 UTC - 11.00 UTC</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="goto">
+    <div class="top">
+      <i class="fas fa-angle-up"></i>
+    </div>
+  </div>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP BUNDLE -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+  </script>
+  <!-- SWIPER -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- AXIOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <!-- NOTIFLIX -->
+  <script src="./vendor/notiflix/notiflix-aio-2.7.0.min.js"></script>
+  <!-- CUSTOM JS -->
+  <script src="./js/index.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/services.js"></script>
+  <script src="./js/career.js"></script>
+  <!-- GET NEWS -->
+  <script>
+    var dataBlog = "";
+    var load_remaining = 0;
+    var current_load = 1;
+    var btnLoadText = "Load More"
+    // get blog
+    axios.get('https://blog.turnkey.id/wp-json/wp/v2/posts?per_page=4&offset=0')
+      .then(function (response) {
+        if (response.data.length != 0) {
+          // handle success
+          console.log(response);
+          dataBlog = response.data;
+          load_remaining = parseInt(response.headers['x-wp-total']) - 4;
+          console.log(load_remaining);
+          if (load_remaining < 1) {
+            $("#btnLoadText").hide();
+          } else {
+            $("#btnLoadText").show();
+          }
+          // update_news();
+          // $("#container-news").show();
+        } else {
+          $("#container-news").hide();
+        }
+      }).catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+
+    function load_more() {
+      $("#btnLoadText").show();
+      btnLoadText = "Loading..."
+      $("#btnLoadText").html(btnLoadText);
+      axios.get('https://blog.turnkey.id/wp-json/wp/v2/posts?per_page=4&offset=' + (current_load * 4))
+        .then(function (response) {
+          // handle success
+          console.log(response.data);
+          console.log(dataBlog);
+          // append data
+          response.data.forEach(function (item) {
+            dataBlog.push(item);
+            // console.log(item);
+            // update_news();
+          });
+          current_load++
+          load_remaining--;
+          console.log(load_remaining)
+          if (load_remaining < 1) {
+            $("#btnLoadText").hide();
+          }
+
+          btnLoadText = "Load More"
+          $("#btnLoadText").html(btnLoadText);
+        }).catch(function (error) {
+          // handle error
+          console.log(error);
+        })
+    }
+    // generate html news
+    function update_news() {
+      console.log("News updated");
+      console.log(dataBlog);
+      $("#body_of_news").html("");
+      dataBlog.forEach((item, index) => {
+        if (item.jetpack_featured_media_url) {
+          $("#body_of_news").append("<div class='col-6 col-md-4 col-lg-3 mb-3' onclick=" + '"' +
+            "window.location.href = '/news-show.html?q=" + item.slug + "'  " + '"' +
+            "> <div class='card-berita'> <img src='" + item.jetpack_featured_media_url +
+            "' alt='' class='w-100'> <h1>" + item.title.rendered + "</h1> <p></p> </div> </div>");
+        } else {
+          $("#body_of_news").append("<div class='col-6 col-md-4 col-lg-3 mb-3' onclick=" + '"' +
+            "window.location.href = '/news-show.html?q=" + item.slug + "'  " + '"' +
+            "> <div class='card-berita'> <h1>" + item.title.rendered + "</h1> <p></p> </div> </div>");
+        }
+      })
+    }
+  </script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML7P288" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="89x89">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- NOTIFLIX -->
+  <link rel="stylesheet" href="./vendor/notiflix/notiflix-2.7.0.min.css" />
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/home2.css" />
+  <link rel="stylesheet" href="./styles/faq.css" />
+  <title>Turnkey - FAQ</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-ML7P288');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <div class="main">
+    <div class="roundedSquare"></div>
+    <div class="heroContainer">
+      <div class="overlay">
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+          <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+              <img src="./assets/images/logo-white.png" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item me-5">
+                  <a class="nav-link color-dark-200 font-semibold" aria-current="page" href="product.html">Product</a>
+                </li> -->
+                <li class="nav-item me-5">
+                  <a class="solution nav-link color-dark-200 font-semibold" href="services.html">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="./services.html?service=company">Treasury strategy</a></li>
+                    <li><a href="./services.html?service=server">STP or ECN technology provider</a></li>
+                    <li><a href="./services.html?service=dealingsupport">Dealing or hedge account management</a></li>
+                    <li><a href="./services.html?service=brand">Customized solutions</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link color-dark-200 font-semibold" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link color-dark-200 font-semibold" href="career.html">Career</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link color-dark-200 font-semibold" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div id="hero" class="container d-flex flex-column">
+          <div class="socials color-dark-200 d-none d-md-block">
+            <div class="socialsContainer">
+              <a href="https://www.linkedin.com/company/turnkeyid" target="_blank" class="
+                    socialText
+                    font-md-2 font-bold
+                    color-dark-200
+                    text-decoration-none
+                  ">Follow Us</a>
+              <i class="fab fa-linkedin font-md-2"></i>
+            </div>
+          </div>
+          <div class="row flex-fill">
+            <div class="col-md-7 d-flex align-items-center mb-5 mb-md-0">
+              <div>
+                <div class="heroText mb-5 ">
+                  <h3 class="font-xl font-semibold mb-2">
+                    FAQ
+                  </h3>
+                  <p class="font-size-md font-light">Check out our frequently asked questions below to find the answer
+                    you are looking for. If you still
+                    can’t find your answer, please contact us.</p>
+                </div>
+                <!-- <a class="btnMain btnMain-dark">See more</a> -->
+              </div>
+            </div>
+            <div class="col-md-5 d-flex align-items-center">
+              <div class="formContainer mx-auto p-4">
+                <div class="formHeader text-center mb-4">
+                  <p>Contact Us</p>
+                </div>
+                <form onsubmit="sendDataSheet(); return false">
+                  <div class="mb-3">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Full Name" 
+                    id="fullName"
+                    required />
+                  </div>
+
+                  <div class="mb-3">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Instituion" 
+                    id="institution"
+                    required />
+                  </div>
+                  <div class="mb-3">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Product of interest" 
+                    id="product_of_interest"
+                    required />
+                  </div>
+                  <div class="mb-3">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Country" 
+                    id="country"
+                    required />
+                  </div>
+
+                  <div class="mb-3">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Email" 
+                    id="email"
+                    required />
+                  </div>
+                  <div class="mb-3">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Phone" 
+                    id="phone"
+                    required
+                    />
+                  </div>
+                  <div>
+                    <div class="mb-3">
+                      <input 
+                      type="text" 
+                      class="form-control" 
+                      placeholder="Message" 
+                      id="message"
+                      required/>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select form-select-sm reach"
+                      id="reach_me_through" required>
+                        <option selected hidden>Reach me through</option>
+                        <option value="Phone">Phone</option>
+                        <option value="Skype">Skype</option>
+                        <option value="Email">Email</option>
+                        <option value="Hangouts">Hangouts</option>
+                      </select>
+                    </div>
+                    <div>
+                      <p class="font-sm font-semibold">Meeting Schedule</p>
+                      <div class="d-flex dropdownGroup">
+                        <select name="day" class="form-select form-select-sm me-2"
+                        id="day" required>
+                          <option selected hidden>Day</option>
+                          <option value="01">1</option>
+                          <option value="02">2</option>
+                          <option value="03">3</option>
+                          <option value="04">4</option>
+                          <option value="05">5</option>
+                          <option value="06">6</option>
+                          <option value="07">7</option>
+                          <option value="08">8</option>
+                          <option value="09">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                        </select>
+                        <select name="month" class="form-select form-select-sm me-2"
+                        id="month" required>
+                          <option selected hidden>Month</option>
+                          <option value="01">January</option>
+                          <option value="02">February</option>
+                          <option value="03">March</option>
+                          <option value="04">April</option>
+                          <option value="05">May</option>
+                          <option value="06">June</option>
+                          <option value="07">July</option>
+                          <option value="08">August</option>
+                          <option value="09">September</option>
+                          <option value="10">October</option>
+                          <option value="11">November</option>
+                          <option value="12">December</option>
+                        </select>
+                        <select name="year" class="form-select form-select-sm"
+                        id="year" required>
+                          <option selected hidden>Year</option>
+                          <option value="2030">2030</option>
+                          <option value="2029">2029</option>
+                          <option value="2028">2028</option>
+                          <option value="2027">2027</option>
+                          <option value="2026">2026</option>
+                          <option value="2025">2025</option>
+                          <option value="2024">2024</option>
+                          <option value="2023">2023</option>
+                          <option value="2022">2022</option>
+                          <option value="2021">2021</option>
+                        </select>
+                      </div>
+                      <div class="mt-2">
+                        <select name="Time" class="form-select form-select-sm"
+                        id="time" required>
+                          <option selected hidden>Time</option>
+                          <option value="07.00 UTC">07.00 UTC</option>
+                          <option value="07.20 UTC">07.20 UTC</option>
+                          <option value="07.40 UTC">07.40 UTC</option>
+                          <option value="08.25 UTC">08.25 UTC</option>
+                          <option value="08.45 UTC">08.45 UTC</option>
+                          <option value="09.05 UTC">09.05 UTC</option>
+                          <option value="09.25 UTC">09.25 UTC</option>
+                          <option value="09.45 UTC">09.45 UTC</option>
+                        </select>
+                      </div>
+                      <div class="d-flex justify-content-center mt-3">
+                        <button class="btnMain btnMainAlt">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="
+                socialsContainer
+                d-flex d-md-none
+                align-items-center
+                justify-content-center
+                color-black-200
+                mt-5
+              ">
+            <a href="https://www.linkedin.com/company/turnkeyid" target="_blank" class="
+                  socialText
+                  font-md-2 font-bold
+                  mb-0
+                  me-2
+                  color-dark-200
+                  text-decoration-none
+                ">Follow Us</a>
+            <i class="fab fa-linkedin font-md-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="body m-4">
+
+    <div id="faq">
+      <div class="container">
+
+
+        <div class="row">
+
+          <h3 class="font-lg">Frequently Asked Questions</h3>
+          <div class="col-md-8">
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">What do you need to build a Forex Broker?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel">
+                <p class="desc">The first question appeared when it comes to Forex Broker preparation is what do we need
+                  to build a Forex Broker? Here are the things that matter: </p>
+                <ol>
+                  <li>Registered company International standard</li>
+                  <li>Professional trading platform</li>
+                  <li>Payment gateway to help client’s deposits</li>
+                  <li>Liquidity</li>
+                  <li>Website to build traffic to your Broker</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">What should I know before I start my own brokerage?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel">
+                <p class="desc">As in every business, it’s good to understand the basic knowledge before you start the
+                  journey. In the world of forex brokerage business, we need to learn how the forex market works as our
+                  provisions. You can access our “Broker’s Business Handbook” where we explicate in every component of
+                  forex brokerage.</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">How much does it cost to become a broker/ how much funds do I need to invest in
+                  becoming a Forex Broker?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel">
+                <p class="desc">For startup Brokers seeking a low-risk solution, it can be as little as $5000 for a
+                  turnkey Forex Broker including:</p>
+                <ul>
+                  <li>company registration</li>
+                  <li>trading platform (web/mobile/desktop) with Client Office CRM</li>
+                  <li>effective payment solution</li>
+                  <li>A-Book execution</li>
+                  <li>and a website</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">What documents are required to register a company and how long it takes?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel">
+                <p class="desc">Usually, new company registration takes one week, and you need to provide a few
+                  documents as identity proof mandatory:</p>
+                <ul>
+                  <li>notarized copy of passport or national ID</li>
+                  <li>notarized copy of utility bill</li>
+                  <li>notarised bank or professional reference letter</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">Do I have to register a company to become a Forex Broker?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel">
+                <p class="desc">Yes. You must register a company; otherwise you won’t be able to sign legal agreements
+                  with technology providers (trading platform) and liquidity providers (financial flow/ execution of
+                  trades).</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">How long it takes to set up a full brokerage?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel">
+                <p class="desc">45 days and your company is ready to launch. Of course, it depends on the setup
+                  specification.</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">Do I need to pay an additional set up fee when upgrading from standard to full package
+                  service?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel">
+                <p class="desc">Yes, you can always upgrade your package. We do not charge any additional fees for the
+                  setup.</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">How to set up spreads and commissions?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel">
+                <p class="desc">All of our Clients get access to the White Label Admin app where they can set and adjust
+                  spreads and commissions.</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">What kind of the Liquidity Providers you have in your offer?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel">
+                <p class="desc">We offer access to our aggregated liquidity providers, including banks, non-banks and
+                  internal ECN trading network to provide bespoke Liquidity for both regulated and offshore Brokers.</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="accordion">
+                <p class="title">What is the difference between A-Book and B-Book income?</p>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="panel hide">
+                <p class="desc">A-Book income is solely based on spread and commission markups. B-Book income is based
+                  on transactions’ profit and loss balance. It's higher risk.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4">
+
+            <div class="img-relative">
+              <img src="assets/images/iPhone 12 Pro1.png" alt="mockup">
+            </div>
+
+          </div>
+          <div class="rectangle"></div>
+        </div>
+      </div>
+    </div>
+    <div id="office" class="pt-5">
+      <div class="container">
+        <h3 class="font-lg text-center font-semibolder mb-5">
+          Turnkey Office
+        </h3>
+        <div class="imgContainer">
+          <img class="img-fluid map" src="./assets/images/map.png" alt="map" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <div class="roundedSquare"></div>
+    <div class="sectionWrapper bg-dark">
+      <div class="container footerInner">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="mb-5 mb-md-0">
+              <a
+                class="logo mb-2 d-block text-center text-md-start"
+                href="index.html"
+                >Turn<span>k</span>ey.</a
+              >
+              <p class="address d-none d-md-block">
+                Biz Lofts uResidence Jl.
+                Boulevard Diponegoro No. 105 Karawaci, Tangerang 15810
+              </p>
+              <p class="copyright mt-0 mt-md-5 text-center text-md-start">
+                © Copyright 2021 Turnkey ID. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footerCol">
+              <p class="footerColHeader">Our Profile</p>
+              <div class="d-flex flex-column">
+                <a class="footerLink mb-2" href="product.html">Product</a>
+                <a class="footerLink mb-2" href="services.html">Services</a>
+                <a class="footerLink mb-2" href="about.html">About</a>
+                <a class="footerLink mb-2" href="career.html">Career</a>
+                <a class="footerLink" href="faq.html">FAQ</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footerCol">
+              <p class="footerColHeader">Follow Us</p>
+              <div class="d-flex flex-column">
+                <a
+                  class="footerLink"
+                  href="https://www.linkedin.com/company/turnkeyid"
+                  target="_blank"
+                  >Linkedin</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footerCol">
+              <p class="footerColHeader">Contact Us</p>
+              <div class="d-flex flex-column">
+                <a class="footerLink mb-2" href="#">P: +62-8123-1425-090</a>
+                <a class="footerLink mb-2" href="#">E: office@turnkey.id</a>
+                <a class="footerLink" href="#">T: 02.00 UTC - 11.00 UTC</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="goto">
+    <div class="top">
+      <i class="fas fa-angle-up"></i>
+    </div>
+  </div>
+
+  </script>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP BUNDLE -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- SWIPER -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- AXIOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <!-- NOTIFLIX -->
+  <script src="./vendor/notiflix/notiflix-aio-2.7.0.min.js"></script>
+  <!-- CUSTOM JS -->
+  <script src="./js/index.js"></script>
+  <script src="./js/script.js"></script>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var icon = document.getElementsByClassName("fa-plus");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function (ev) {
+        // closeAll(ev.target);
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        console.log(panel);
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML7P288"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+</body>
+
+</html>
