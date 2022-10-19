@@ -393,6 +393,11 @@ button {
 }
 
 @media (max-width: 820px) {
+  #footer{
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   #footer .roundedSquare {
     width: 700px;
     height: 700px;
